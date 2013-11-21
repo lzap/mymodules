@@ -7,7 +7,7 @@ class foreman_debug_rsync::config {
 
   file { $base:
     ensure => directory,
-    user   => 'nobody',
+    owner  => 'nobody',
     group  => 'nobody',
   }
 
