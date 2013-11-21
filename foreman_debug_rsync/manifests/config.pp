@@ -1,6 +1,7 @@
 class foreman_debug_rsync::config {
 
   include 'rsync'
+  include 'rsync::server'
 
   $base = '/data/rsync'
 
