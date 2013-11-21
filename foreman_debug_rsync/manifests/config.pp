@@ -16,8 +16,8 @@ class foreman_debug_rsync::config {
     read_only => 'no',
     write_only => 'yes',
     list => 'yes',
-    uid => -2,
-    gid => -2,
+    uid => 99,
+    gid => 99,
   }
 
 }
