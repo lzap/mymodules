@@ -6,7 +6,9 @@ class foreman_debug_rsync::config {
   $base = '/var/www/html/foreman-debug-rsync'
 
   file { $base:
-    ensure  => directory,
+    ensure => directory,
+    user   => 'nobody',
+    group  => 'nobody',
   }
 
   rsync::server::module{ 'debug-incoming':
@@ -16,8 +18,8 @@ class foreman_debug_rsync::config {
     read_only => 'no',
     write_only => 'yes',
     list => 'yes',
-    uid => 99,
-    gid => 99,
+    uid => 'nobody',
+    gid => 'nobody',
   }
 
 }
