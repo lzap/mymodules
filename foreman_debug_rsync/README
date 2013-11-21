@@ -1,16 +1,3 @@
-foreman_debug_rsync
-
 This is the foreman_debug_rsync module.
 
-License
--------
-
-
-Contact
--------
-
-
-Support
--------
-
-Please log tickets and issues at our [Projects site](http://projects.example.com)
+Configures rsync to accept foreman-debug tarballs.
