@@ -3,7 +3,7 @@ class foreman_debug_rsync::config {
   include 'rsync'
   include 'rsync::server'
 
-  $base = '/data/rsync'
+  $base = '/var/www/html/foreman-debug-rsync'
 
   file { $base:
     ensure  => directory,
