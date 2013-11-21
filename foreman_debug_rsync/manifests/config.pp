@@ -5,6 +5,7 @@ class foreman_debug_rsync::config {
 
   file { $foreman_debug_rsync::base:
     ensure => directory,
+    mode   => 770,
     owner  => 'nobody',
     group  => 'nobody',
   }
@@ -16,7 +17,7 @@ class foreman_debug_rsync::config {
     max_connections => 15,
     read_only       => 'no',
     write_only      => 'yes',
-    list            => 'yes',
+    list            => 'no',
     uid             => 'nobody',
     gid             => 'nobody',
   }
