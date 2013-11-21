@@ -1,3 +1,6 @@
 [submodule "rsync"]
 	path = rsync
 	url = https://github.com/puppetlabs/puppetlabs-rsync.git
+[submodule "xinetd"]
+	path = xinetd
+	url = https://github.com/puppetlabs/puppetlabs-xinetd.git
